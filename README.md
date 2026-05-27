@@ -9,11 +9,11 @@ Built with Flask + Scikit-learn on the backend and a fully custom glassmorphism-
 
 # ✨ Features
 
-✅ Benchmark multiple ML models instantly
-✅ Compare performance across different datasets
-✅ Interactive leaderboard with live rankings
-✅ Beautiful dark-mode glassmorphism UI
-✅ Animated staggered table rendering
-✅ Real-time Chart.js visualizations
-✅ REST API powered architecture
-✅ Supports classical ML + boosting algorithms
+* ✅ Benchmark multiple ML models instantly
+* ✅ Compare performance across different datasets
+* ✅ Interactive leaderboard with live rankings
+* ✅ Beautiful dark-mode glassmorphism UI
+* ✅ Animated staggered table rendering
+* ✅ Real-time Chart.js visualizations
+* ✅ REST API powered architecture
+* ✅ Supports classical ML + boosting algorithms
