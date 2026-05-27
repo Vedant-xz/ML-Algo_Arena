@@ -17,3 +17,19 @@ Built with Flask + Scikit-learn on the backend and a fully custom glassmorphism-
 * ✅ Real-time Chart.js visualizations
 * ✅ REST API powered architecture
 * ✅ Supports classical ML + boosting algorithms
+
+
+
+# 🧠 Models Included
+
+The arena currently evaluates:
+
+Model                 	Type
+Logistic                Regression	Linear Model
+Decision Tree	          Tree-Based
+Random Forest	          Ensemble
+SVM	                    Kernel-Based
+KNN	                    Distance-Based
+Neural Network (MLP)	  Deep Learning
+XGBoost	                Gradient Boosting
+LightGBM	              Boosting Framework
