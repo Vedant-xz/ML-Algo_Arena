@@ -65,17 +65,29 @@ Currently supported datasets:
 
 ML-Algo-Arena/
 │
+
 ├── app.py
+
 ├── ml_arena.py
+
 ├── requirements.txt
+
 │
+
 ├── templates/
+
 │   └── index.html
+
 │
+
 ├── static/
+
 │   ├── style.css
+
 │   └── script.js
+
 │
+
 └── ML_Algo_Arena.ipynb
 
 
@@ -83,20 +95,20 @@ ML-Algo-Arena/
 
 ### 🔹 Backend
 
-Python
-Flask
-Scikit-learn
-XGBoost
-LightGBM
-Pandas
-NumPy
+* Python
+* Flask
+* Scikit-learn
+* XGBoost
+* LightGBM
+* Pandas
+* NumPy
 
 ### 🔹 Frontend
 
-HTML5
-CSS3
-Vanilla JavaScript
-Chart.js
+* HTML5
+* CSS3
+* Vanilla JavaScript
+* Chart.js
 
 
 
@@ -104,12 +116,12 @@ Chart.js
 
 The frontend is designed with a premium futuristic aesthetic featuring:
 
-🌌 Dark-mode interface
-🫧 Glassmorphism panels
-💡 Neon gradient floating orbs
-✨ Staggered cascading animations
-📈 Dynamic leaderboard transitions
-📊 Interactive mixed bar charts
+* 🌌 Dark-mode interface
+* 🫧 Glassmorphism panels
+* 💡 Neon gradient floating orbs
+* ✨ Staggered cascading animations
+* 📈 Dynamic leaderboard transitions
+* 📊 Interactive mixed bar charts
 
 
 
@@ -117,15 +129,15 @@ The frontend is designed with a premium futuristic aesthetic featuring:
 
 Planned upgrades:
 
-📂 Custom CSV dataset uploads
-⚡ Async model execution
-🧪 Hyperparameter tuning
-🧠 Deep Learning integrations
-🐳 Docker deployment
-☁️ Cloud deployment
-🏆 Historical benchmark tracking
-👤 User authentication
-📊 More advanced charting
+* 📂 Custom CSV dataset uploads
+* ⚡ Async model execution
+* 🧪 Hyperparameter tuning
+* 🧠 Deep Learning integrations
+* 🐳 Docker deployment
+* ☁️ Cloud deployment
+* 🏆 Historical benchmark tracking
+* 👤 User authentication
+* 📊 More advanced charting
 
 
 
