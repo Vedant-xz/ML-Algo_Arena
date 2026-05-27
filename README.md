@@ -35,3 +35,100 @@ The arena currently evaluates:
 | XGBoost | Gradient Boosting |
 | LightGBM | Boosting Framework |
 
+
+
+# 📊 Evaluation Metrics
+
+Each model is evaluated using 5-Fold Cross Validation on:
+
+* Accuracy
+* Precision (Macro)
+* Recall (Macro)
+* F1 Score (Macro)
+* Standard Deviation
+* Training Time
+
+
+
+# 🗂️ Supported Datasets
+
+Currently supported datasets:
+
+* Breast Cancer
+* Heart Disease
+* Iris
+* Wine Quality
+
+
+
+# 🏗️ Project Architecture
+
+ML-Algo-Arena/
+│
+├── app.py
+├── ml_arena.py
+├── requirements.txt
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   ├── style.css
+│   └── script.js
+│
+└── ML_Algo_Arena.ipynb
+
+
+# ⚙️ Tech Stack
+
+### 🔹 Backend
+
+Python
+Flask
+Scikit-learn
+XGBoost
+LightGBM
+Pandas
+NumPy
+
+### 🔹 Frontend
+
+HTML5
+CSS3
+Vanilla JavaScript
+Chart.js
+
+
+
+# 🎨 UI Highlights
+
+The frontend is designed with a premium futuristic aesthetic featuring:
+
+🌌 Dark-mode interface
+🫧 Glassmorphism panels
+💡 Neon gradient floating orbs
+✨ Staggered cascading animations
+📈 Dynamic leaderboard transitions
+📊 Interactive mixed bar charts
+
+
+
+# 📈 Future Improvements
+
+Planned upgrades:
+
+📂 Custom CSV dataset uploads
+⚡ Async model execution
+🧪 Hyperparameter tuning
+🧠 Deep Learning integrations
+🐳 Docker deployment
+☁️ Cloud deployment
+🏆 Historical benchmark tracking
+👤 User authentication
+📊 More advanced charting
+
+
+
+# ⭐ Show Some Support
+
+If you found this project useful or inspiring, consider giving it a ⭐ on GitHub.
