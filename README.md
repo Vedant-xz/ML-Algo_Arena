@@ -20,7 +20,11 @@ Built with Flask + Scikit-learn on the backend and a fully custom glassmorphism-
 
 
 
-| Model | Type |
+# 🧠 Models Included
+
+The arena currently evaluates:
+
+# | Model | Type |
 | :--- | :--- |
 | Logistic Regression | Linear Model |
 | Decision Tree | Tree-Based |
