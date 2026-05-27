@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Algo Arena | Leaderboard</title>
+    <meta name="description" content="A live machine learning algorithm arena and leaderboard.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <main class="container">
+        <header class="header">
+            <h1 class="title">ML Algo <span class="highlight">Arena</span></h1>
+            <p class="subtitle">Live evaluation of machine learning models on multiple datasets.</p>
+            
+            <div class="dataset-selector" style="margin-bottom: 2rem;">
+                <label for="dataset-select" style="color: var(--text-secondary); margin-right: 1rem; font-weight: 600;">Select Dataset:</label>
+                <select id="dataset-select" style="padding: 0.5rem 1rem; border-radius: 8px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); color: white; font-family: 'Outfit', sans-serif; font-size: 1rem; outline: none; backdrop-filter: blur(5px);">
+                    <option style="background: var(--bg-color)" value="breast_cancer">Breast Cancer (Default)</option>
+                    <option style="background: var(--bg-color)" value="heart">Heart Disease</option>
+                    <option style="background: var(--bg-color)" value="wine">Wine Quality</option>
+                    <option style="background: var(--bg-color)" value="iris">Iris Flowers</option>
+                </select>
+            </div>
+
+            <button id="run-btn" class="run-btn">
+                <span class="btn-text">Initiate Battle</span>
+                <span class="btn-icon">⚡</span>
+            </button>
+        </header>
+
+        <section id="arena-stage" class="arena-stage">
+            <!-- Initial State -->
+            <div id="initial-state" class="state-container active">
+                <div class="icon-container">
+                    <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="idle-icon"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                </div>
+                <p>The arena is empty. Select a dataset and initiate the battle.</p>
+            </div>
+
+            <!-- Loading State -->
+            <div id="loading-state" class="state-container">
+                <div class="loader">
+                    <div class="loader-ring"></div>
+                    <div class="loader-ring"></div>
+                    <div class="loader-ring"></div>
+                </div>
+                <p class="loading-text">Training Models...<br><span class="sub-loading-text">This usually takes about 7-8 seconds</span></p>
+            </div>
+
+            <!-- Results State -->
+            <div id="results-state" class="state-container">
+                <div class="winner-card glass-panel">
+                    <div class="winner-badge">🏆 Champion</div>
+                    <h2 id="winner-name">Neural Network</h2>
+                    <div class="winner-stats">
+                        <div class="stat">
+                            <span class="stat-label">Accuracy</span>
+                            <span id="winner-accuracy" class="stat-value">0.980</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Training Time</span>
+                            <span id="winner-time" class="stat-value">1.84s</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-container glass-panel">
+                    <table id="leaderboard-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Model</th>
+                                <th>Accuracy</th>
+                                <th>Precision</th>
+                                <th>Recall</th>
+                                <th>F1-Score</th>
+                                <th>Time (s)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboard-body">
+                            <!-- Rows will be injected by JS -->
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="chart-container glass-panel" style="margin-top: 2rem; padding: 2rem; width: 100%;">
+                    <h3 style="margin-bottom: 1rem; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 1px; font-size: 1rem;">Performance Comparison</h3>
+                    <canvas id="metricsChart" style="max-height: 400px; width: 100%;"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
