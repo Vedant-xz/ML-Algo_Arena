@@ -1,9 +1,12 @@
 🚀 ML Algo Arena
+
+
 Live Machine Learning Benchmarking Dashboard
 
 ML Algo Arena is a premium interactive web application that benchmarks multiple Machine Learning algorithms across different datasets in real-time and visualizes the results through a modern animated dashboard.
 
 Built with Flask + Scikit-learn on the backend and a fully custom glassmorphism-inspired frontend, the project combines machine learning engineering with high-end UI/UX design.
+
 
 
 ✨ Features
@@ -16,6 +19,7 @@ Built with Flask + Scikit-learn on the backend and a fully custom glassmorphism-
 ✅ Real-time Chart.js visualizations
 ✅ REST API powered architecture
 ✅ Supports classical ML + boosting algorithms
+
 
 
 🧠 Models Included
@@ -32,6 +36,7 @@ XGBoost	Gradient Boosting
 LightGBM	Boosting Framework
 
 
+
 📊 Evaluation Metrics
 Each model is evaluated using 5-Fold Cross Validation on:
 
@@ -43,6 +48,7 @@ Standard Deviation
 Training Time
 
 
+
 🗂️ Supported Datasets
 Currently supported datasets:
 
@@ -50,6 +56,7 @@ Breast Cancer
 Heart Disease
 Iris
 Wine Quality
+
 
 
 🏗️ Project Architecture
@@ -70,6 +77,7 @@ ML-Algo-Arena/
 └── ML_Algo_Arena.ipynb
 
 
+
 ⚙️ Tech Stack
 
 🔹 Backend
@@ -86,6 +94,7 @@ HTML5
 CSS3
 Vanilla JavaScript
 Chart.js
+
 
 
 🎨 UI Highlights
