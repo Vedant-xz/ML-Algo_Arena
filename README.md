@@ -20,24 +20,14 @@ Built with Flask + Scikit-learn on the backend and a fully custom glassmorphism-
 
 
 
-# 🧠 Models Included
+| Model | Type |
+| :--- | :--- |
+| Logistic Regression | Linear Model |
+| Decision Tree | Tree-Based |
+| Random Forest | Ensemble |
+| SVM | Kernel-Based |
+| KNN | Distance-Based |
+| Neural Network (MLP) | Deep Learning |
+| XGBoost | Gradient Boosting |
+| LightGBM | Boosting Framework |
 
-The arena currently evaluates:
-
-# Model                   Type
-
-Logistic                Regression	Linear Model
-
-Decision Tree	          Tree-Based
-
-Random Forest	          Ensemble
-
-SVM	                    Kernel-Based
-
-KNN	                    Distance-Based
-
-Neural Network (MLP)	  Deep Learning
-
-XGBoost	                Gradient Boosting
-
-LightGBM	              Boosting Framework
