@@ -24,12 +24,20 @@ Built with Flask + Scikit-learn on the backend and a fully custom glassmorphism-
 
 The arena currently evaluates:
 
-Model                 	Type
+# Model                   Type
+
 Logistic                Regression	Linear Model
+
 Decision Tree	          Tree-Based
+
 Random Forest	          Ensemble
+
 SVM	                    Kernel-Based
+
 KNN	                    Distance-Based
+
 Neural Network (MLP)	  Deep Learning
+
 XGBoost	                Gradient Boosting
+
 LightGBM	              Boosting Framework
